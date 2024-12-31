@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap");
+
+html {
+  box-sizing: border-box;
+  cursor: url("cursors/pixel_wand.cur"), auto;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+a:hover,
+a:focus {
+  cursor: url("cursors/angel_pointer.cur"), auto;
+}
+
+.profile {
+  display: inline-block;
+  width: 100px;
+  border: 3px dashed #ccc;
+  border-radius: 3px;
+  margin-right: 1rem;
+}
+h1 {
+  display: inline-block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+li::selection {
+  background-color: pink;
+}
+
+li:hover {
+  cursor: url("cursors/galaxy.cur"), auto;
+}
+
+html > * ::selection {
+  background-color: pink;
+}
+
+body {
+  max-width: 700px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 7rem;
+}
