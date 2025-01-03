@@ -7,6 +7,19 @@ html {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+  font-size: larger;
+  background-color: #ccc;
+}
+
+nav ul img {
+  width: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  list-style: none;
 }
 
 a:hover,
@@ -17,7 +30,7 @@ a:focus {
 .profile {
   display: inline-block;
   width: 100px;
-  border: 3px dashed #ccc;
+  border: 3px dashed #bbb;
   border-radius: 3px;
   margin-right: 1rem;
 }
@@ -34,8 +47,12 @@ li::selection {
   background-color: pink;
 }
 
+li {
+  width: fit-content;
+}
+
 li:hover {
-  cursor: url("cursors/galaxy.cur"), auto;
+  cursor: url("cursors/text_select.cur"), auto;
 }
 
 html > * ::selection {
@@ -50,4 +67,11 @@ body {
 
 .logo {
   width: 7rem;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-flow: row wrap;
 }
