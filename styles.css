@@ -133,7 +133,7 @@ li a::hover {
 }
 
 .logo {
-  width: 7rem;
+  width: 3rem;
 }
 
 .skills ul {
@@ -141,6 +141,23 @@ li a::hover {
   display: flex;
   gap: 1rem;
   flex-flow: row wrap;
+}
+
+a:has(img) {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.education p:first-of-type {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.work h3 {
+  display: inline-block;
+}
+.work p:nth-of-type(2) {
+  display: inline-block;
 }
 
 @media (max-width: 1500px) {
