@@ -28,13 +28,29 @@ html {
   margin-bottom: 0;
 }
 
+.mariam-profile ul {
+  list-style: none;
+}
+
+.websites {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.websites li {
+  padding: 0;
+  margin: 0;
+  height: 1.5rem;
+}
+
 .profile-picture span {
   width: 100px;
   max-height: max-content;
   color: white;
   text-align: center;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-radius: 0px 0px 114px 17px / 0px 0px 75px 0px;
   grid-column: 1/2;
   font-size: small;
   margin-top: 0;
@@ -47,13 +63,20 @@ html {
   margin-top: -3px;
 }
 
+.name-websites {
+  display: flex;
+  flex-direction: column;
+}
+
 .mariam-profile {
   display: flex;
   flex-direction: row;
+  align-items: end;
 }
 
-nav ul img {
+.name-websites .icon {
   width: 1.5rem;
+  margin-bottom: 0;
 }
 
 nav ul {
@@ -71,6 +94,7 @@ a:focus {
 h1 {
   display: inline-block;
 }
+
 *,
 *::before,
 *::after {
@@ -85,7 +109,7 @@ li {
   width: fit-content;
 }
 
-li:hover {
+li a::hover {
   cursor: url("cursors/text_select.cur"), auto;
 }
 
