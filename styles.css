@@ -144,17 +144,29 @@ li a::hover {
 }
 
 a:has(img) {
-  display: inline-block;
+  display: inline;
   text-decoration: none;
 }
 
-.education p:first-of-type {
-  display: inline-block;
-  margin-left: 1rem;
+p:has(time) {
+  color: grey;
 }
 
-.work h3 {
+.education .flexbox,
+.work .flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.work .flexbox .text span {
+  display: block;
+  margin: 0 1rem;
+}
+
+h3 {
   display: inline-block;
+  margin: 0 1rem;
 }
 .work p:nth-of-type(2) {
   display: inline-block;
