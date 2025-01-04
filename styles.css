@@ -50,6 +50,7 @@ body {
   grid-row: 1/2;
   grid-column: 1/2;
   margin-bottom: 0;
+  background-color: white;
 }
 
 .mariam-profile ul {
@@ -74,7 +75,7 @@ body {
   max-height: max-content;
   color: white;
   text-align: center;
-  border-radius: 0px 0px 114px 17px / 0px 0px 75px 0px;
+  border-radius: 3px;
   grid-column: 1/2;
   font-size: small;
   margin-top: 0;
@@ -140,4 +141,11 @@ li a::hover {
   display: flex;
   gap: 1rem;
   flex-flow: row wrap;
+}
+
+@media (max-width: 1500px) {
+  body {
+    max-width: 100%;
+    border: none;
+  }
 }
