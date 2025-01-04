@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
   cursor: url("cursors/pixel_wand.cur"), auto;
@@ -9,6 +15,21 @@ html {
   font-style: normal;
   font-size: larger;
   background-color: #ccc;
+}
+
+html > * ::selection {
+  background-color: pink;
+}
+
+body {
+  max-width: 50vw;
+  padding: 2rem;
+  margin: 0 auto;
+  font-size: large;
+  border-right: 3px dashed #000;
+  border-left: 3px dashed #000;
+  border-top: 3px dashed #000;
+  background-color: aliceblue;
 }
 
 .profile-picture {
@@ -95,12 +116,6 @@ h1 {
   display: inline-block;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 li::selection {
   background-color: pink;
 }
@@ -111,21 +126,6 @@ li {
 
 li a::hover {
   cursor: url("cursors/text_select.cur"), auto;
-}
-
-html > * ::selection {
-  background-color: pink;
-}
-
-body {
-  max-width: 50vw;
-  padding: 2rem;
-  margin: 0 auto;
-  font-size: large;
-  border-right: 3px dashed #000;
-  border-left: 3px dashed #000;
-  border-top: 3px dashed #000;
-  background-color: aliceblue;
 }
 
 .logo {
