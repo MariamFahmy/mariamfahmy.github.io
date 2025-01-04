@@ -17,6 +17,7 @@ html {
   background-color: #ccc;
   background-image: url("images/desk.png");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 html > * ::selection {
