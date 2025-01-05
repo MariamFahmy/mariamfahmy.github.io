@@ -146,7 +146,7 @@ a:has(img) {
   text-decoration: none;
 }
 
-p:has(time) {
+span:has(time) {
   color: grey;
 }
 
@@ -154,10 +154,11 @@ p:has(time) {
 .work .flexbox {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  justify-content: start;
+  align-items: center;
 }
 
-.work .flexbox .text span {
+.flexbox .text span {
   display: block;
   margin: 0 1rem;
 }
