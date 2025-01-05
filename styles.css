@@ -49,6 +49,7 @@ body {
   grid-column: 1/2;
   margin-bottom: 0;
   background-color: white;
+  align-self: start;
 }
 
 .mariam-profile ul {
@@ -86,17 +87,15 @@ body {
   margin-top: -3px;
 }
 
+.mariam-profile {
+  display: grid;
+  grid-template-columns: auto auto;
+}
 .name-websites {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-
-.mariam-profile {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-}
-
 .name-websites .icon {
   width: 1.5rem;
   margin-bottom: 0;
@@ -115,7 +114,8 @@ a:focus {
 }
 
 h1 {
-  display: inline-block;
+  display: inline;
+  margin: 0;
 }
 
 li::selection {
@@ -173,6 +173,7 @@ h3 {
 
 @media (max-width: 1500px) {
   body {
+    margin: 0 auto;
     max-width: 100%;
     border: none;
   }
