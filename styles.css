@@ -89,7 +89,7 @@ body {
 
 .mariam-profile {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: max-content auto;
 }
 .name-websites {
   display: flex;
