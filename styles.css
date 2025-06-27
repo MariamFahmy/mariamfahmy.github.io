@@ -39,7 +39,7 @@ body {
   grid-template-rows: max-content;
 }
 
-.profile {
+#profile {
   display: inline-block;
   width: 100px;
   border: 3px dashed #bbb;

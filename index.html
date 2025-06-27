@@ -11,11 +11,7 @@
       <aside>🚧 under construction 🚧</aside>
       <div class="mariam-profile">
         <div class="profile-picture">
-          <img
-            src="images/mariam.png"
-            alt="Mariam in pixel art"
-            class="profile"
-          />
+          <img src="images/mariam.png" alt="Mariam in pixel art" id="profile" />
           <span>#OpenToWork</span>
         </div>
         <div class="name-websites">
@@ -116,4 +112,13 @@
       </ul>
     </section>
   </body>
+  <script>
+    let profile_picture = document.getElementById("profile");
+    profile_picture.addEventListener("mouseover", (e) => {
+      profile_picture.src = "images/mariam_smiling.png";
+    });
+    profile_picture.addEventListener("mouseleave", (e) => {
+      profile_picture.src = "images/mariam.png";
+    });
+  </script>
 </html>
