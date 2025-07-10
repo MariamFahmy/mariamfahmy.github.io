@@ -1,7 +1,7 @@
 # https://mariamfahmy.github.io/
 
 
-## Responsive
+## Mobile
 ![image](https://github.com/user-attachments/assets/2cfb2c0d-347b-47dc-8790-55d82f0e2565)
 
 ## Desktop
