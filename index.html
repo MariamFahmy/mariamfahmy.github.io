@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -70,7 +70,7 @@
         <li>PostgreSQL</li>
       </ul>
     </section>
-        <section class="work">
+    <section class="work">
       <h2>Work Experience</h2>
       <div class="flexbox">
         <a href="https://ednatec.com/" target="_blank">
@@ -108,10 +108,11 @@
   </body>
   <script>
     let profile_picture = document.getElementById("profile");
-    profile_picture.addEventListener("mouseover", (e) => {
+    let smile_hover_area = document.querySelector(".mariam-profile");
+    smile_hover_area.addEventListener("mouseover", (e) => {
       profile_picture.src = "images/me_smiling3.png";
     });
-    profile_picture.addEventListener("mouseleave", (e) => {
+    smile_hover_area.addEventListener("mouseleave", (e) => {
       profile_picture.src = "images/mariam.png";
     });
   </script>
