@@ -107,11 +107,12 @@
     </section>
   </body>
   <script>
-    let profile_picture = document.getElementById("smile");
-    profile_picture.addEventListener("mouseover", (e) => {
+    let profile_picture = document.getElementById("profile");
+    let smile = document.getElementById("smile");
+    smile.addEventListener("mouseover", (e) => {
       profile_picture.src = "images/me_smiling3.png";
     });
-    profile_picture.addEventListener("mouseleave", (e) => {
+    smile.addEventListener("mouseleave", (e) => {
       profile_picture.src = "images/mariam.png";
     });
   </script>
